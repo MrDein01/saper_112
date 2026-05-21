@@ -20,7 +20,7 @@ class Difficulty(Enum):
 class Modifier(Enum):
     NONE = ("Без модификатора", "Обычная игра", None, True)
     SHUFFLE = ("Перемешивание", "Каждые 30с мины меняются местами, флажки остаются", "shuffle", False)
-    CHAIN_REACTION = ("Цепная реакция", "Открытие пустой клетки открывает все соседние пустые клетки", "chain_reaction",
+    CHAIN_REACTION = ("Анти-Цепная реакция", "Клетки отркываются по одиночке", "chain_reaction",
                       False)
     TIMER_BOMB = ("Сапёр-сапёр", "Раз в 40с можно обезвредить мину, указав её расположение", "timer_bomb", False)
     MEGA_MINE = ("Мега-мина", "Одна мина занимает 2x2 клетки", "mega_mine", False)
